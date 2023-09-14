@@ -1,0 +1,21 @@
+/*********************************************
+ * OPL 12.10.0.0 Data
+ * Author: Admin
+ * Creation Date: Apr 14, 2022 at 7:00:11 PM
+ *********************************************/
+
+Product = {A B};
+
+SheetConnection e("Question 2.xlsx");
+
+Max_Hour1 from SheetRead (e,"Max_Hour1") ;
+Max_Hour2 from SheetRead (e,"Max_Hour2") ;
+Max_Hour3 from SheetRead (e,"Max_Hour3") ;
+Profit from SheetRead (e,"Profit") ;
+Min_Product from SheetRead (e,"Min_Product") ;
+Set_Up from SheetRead (e,"Set_up") ;
+Production from SheetRead (e,"Production") ;
+Assembeling from SheetRead (e,"Assembeling") ;
+Shipping from SheetRead (e,"Shipping") ;
+
+P to SheetWrite(e,"P") ;
